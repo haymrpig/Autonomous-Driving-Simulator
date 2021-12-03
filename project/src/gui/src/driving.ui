@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Driving</class>
+ <widget class="QMainWindow" name="Driving">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1627</width>
+    <height>998</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>681</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Camera View(Lane Detection, WayPoint) </string>
+    </property>
+    <widget class="QLabel" name="cameradrawview">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>661</width>
+       <height>481</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Camera View</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>30</y>
+      <width>291</width>
+      <height>871</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>User Input Parameter</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>40</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>lookaheaddistance :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="camcenterline">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>200</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="camtilt">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>160</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>160</y>
+       <width>71</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>  cam_tilt :</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="enter">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>820</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>save</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>120</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> cam_focal :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>200</y>
+       <width>121</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>  cam_centerline :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="camheight">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>80</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="camfocal">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>120</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>80</y>
+       <width>91</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> cam_height :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lookaheaddistance">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>240</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>waypoint number :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="numwaypoint">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>240</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>280</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>car length : </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="carlength">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>280</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>320</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>cam bias :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>360</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>gps bias :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="cambias">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>320</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="gpsbias">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>360</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>400</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>image width :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>440</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>image height :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="imagewidth">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>400</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="imageheight">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>440</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>480</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>heading bias :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="headingbias">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>480</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="roiclear">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>780</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>roi clear</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="gpscheck">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>670</y>
+       <width>92</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>gps on/off</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>520</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>smoothing weight : </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="smoothingweight">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>520</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>560</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>R weight : </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Rweight">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>560</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>560</y>
+      <width>331</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>steering all</string>
+    </property>
+    <widget class="QLabel" name="name">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>Hdmap_steering:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="steering">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>30</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Hdmap steering</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="name_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>113</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string>lane_steering:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lanesteering">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>113</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string>lane steering</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="name_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>203</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string>user_steering:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="usrsteering">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>203</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string>usr steering</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="name_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>300</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string>weight_steering:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="weightsteering">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>300</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string>weight steering</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>560</y>
+      <width>341</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>localization</string>
+    </property>
+    <widget class="QLabel" name="odometryy">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>130</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="odometryx">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string>gps : </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="gpslon">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="gpslat">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>60</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="odometry">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string>odo: </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="odometry_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Odometry Distance:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="disttotal">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="odometry_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Odometry Error:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="xdiff">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>290</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ydiff">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>290</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;Ubuntu Condensed&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>30</y>
+      <width>601</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Steering Error(Map, Lane)</string>
+    </property>
+    <widget class="QLabel" name="cameraview">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>581</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Steering Error Plot</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_6">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>560</y>
+      <width>601</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Cross Track Error</string>
+    </property>
+    <widget class="QLabel" name="crosstrackerror">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>581</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>581</width>
+       <height>301</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Cross Track Error</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_7">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>290</y>
+      <width>601</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Steering Error(Weighted)</string>
+    </property>
+    <widget class="QLabel" name="steeringweight">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>581</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Steering Error Plot</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1627</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

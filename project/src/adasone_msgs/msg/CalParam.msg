@@ -1,0 +1,11 @@
+int32 near_y
+int32 near_lx
+int32 near_rx
+int32 far_y
+int32 far_lx
+int32 far_rx
+int32 vp_x
+int32 vp_y
+float32 near_m
+float32 far_m
+string deep_model

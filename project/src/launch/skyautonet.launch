@@ -1,0 +1,32 @@
+<launch>
+  <!-- ON/OFF Setting -->
+  <arg name="enable_bagfile_pkg"                 default="true "/>
+  <arg name="enable_lanedetection_pkg"           default="true"/>
+  <arg name="enable_hdmap_pkg"                   default="true"/>
+  <arg name="enbale_gui_pkg"                     default="true"/>
+
+
+<!-- Run bagfile play-->
+  <group if="$(arg enable_bagfile_pkg)">
+     <include file="$(find bagfile_replay)/launch/bagfilereplay_pkg.launch">
+    </include>
+  </group>
+<!-- Run GUI -->
+  <group if="$(arg enbale_gui_pkg)">
+    <include file="$(find gui)/launch/gui_pkg.launch">
+    </include>
+  </group>
+
+  <!-- Run Lanedetection node -->
+  <group if="$(arg enable_lanedetection_pkg)">
+    <include file="$(find lanedetection)/launch/lanedetection_pkg.launch">
+    </include>
+  </group>
+
+  <!-- Run Hdmap node -->
+  <group if="$(arg enable_hdmap_pkg)">
+    <include file="$(find hdmap)/launch/hdmap_pkg.launch">
+    </include>
+  </group>
+  
+</launch>

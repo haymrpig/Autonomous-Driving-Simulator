@@ -1,0 +1,11 @@
+int32 	radar_id
+int32 	fuse_id
+float32 angle
+float32 lon_dist
+float32 lat_dist
+float32 lon_vel
+float32 lat_vel
+float32 rcs
+float32 trackTime
+float32 updateTime_sec
+float32 updateTime_usec 

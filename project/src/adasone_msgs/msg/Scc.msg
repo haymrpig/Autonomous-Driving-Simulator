@@ -1,0 +1,15 @@
+Header header
+float64 velocity 
+float64 accel_decel
+float64 distance
+float64 rel_velocity
+bool preceding_object_detected
+float64 final_membership_accel_decel_nvl
+float64 final_membership_accel_decel_nl
+float64 final_membership_accel_decel_nm
+float64 final_membership_accel_decel_ns
+float64 final_membership_accel_decel_z
+float64 final_membership_accel_decel_ps
+float64 final_membership_accel_decel_pm
+float64 final_membership_accel_decel_pl
+float64 final_membership_accel_decel_pvl

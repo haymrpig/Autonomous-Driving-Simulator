@@ -1,0 +1,4 @@
+std_msgs/Float32MultiArray x1
+std_msgs/Float32MultiArray y1
+std_msgs/Float32MultiArray x2
+std_msgs/Float32MultiArray y2

@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/yun/1234/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/yun/asdf/devel/include/**",
+        "/home/yun/1234/src/gui/include/**",
+        "/home/yun/1234/src/hdmap/include/**",
+        "/home/yun/1234/src/lanedetection/include/**",
+        "/home/yun/1234/src/odometry/include/**",
+        "/home/yun/1234/src/parameter/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

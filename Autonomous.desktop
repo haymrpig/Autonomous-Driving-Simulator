@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Icon[en_US]=/home/hong/simulator/autonomous.png
+Name[en_US]=Autonomous
+Exec=/home/hong/simulator/autonomous.sh
+Comment[en_US]=good
+Name=Autonomous
+Comment=good
+Icon=/home/hong/simulator/autonomous.png
+GenericName[en_US.UTF-8]=good

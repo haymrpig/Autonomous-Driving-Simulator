@@ -1,0 +1,6 @@
+<!-- -->
+<launch>
+  <!-- declare arguments with default values -->
+  <node pkg="hdmap" type="hdmap_node" name="hdmap_node" output="screen">
+  </node>
+</launch>

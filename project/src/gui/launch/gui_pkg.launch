@@ -1,0 +1,6 @@
+<!-- -->
+<launch>
+  <!-- declare arguments with default values -->
+  <node pkg="gui" type="gui_node" name="gui_node" output="screen">
+  </node>
+</launch>

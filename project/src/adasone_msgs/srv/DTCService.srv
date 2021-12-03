@@ -1,0 +1,4 @@
+uint8 dtc_code
+bool is_set # 1:set, 0:clear
+---
+bool ret

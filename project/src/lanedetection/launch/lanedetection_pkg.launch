@@ -1,0 +1,6 @@
+<!-- -->
+<launch>
+  <!-- declare arguments with default values -->
+  <node pkg="lanedetection" type="lanedetection_node" name="lanedetection_node" output="screen">
+  </node>
+</launch>

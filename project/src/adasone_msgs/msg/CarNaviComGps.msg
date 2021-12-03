@@ -1,0 +1,29 @@
+# GPS packet data format
+# @refer: ascs_gateway_pkg/docs/communication_if.pdf
+uint8 version
+uint32 utc_sec
+uint32 utc_usec
+uint8 type
+uint8 fixType
+uint8 diffSoln
+uint8 carrSoln
+int32 lat
+int32 lon
+int32 elev
+int32 nedNorSpd
+int32 nedEastSpd
+int32 nedDownSpd
+int32 heading
+uint8 numSV
+uint8 speedBump
+int16 distanceFromSB
+bool obu_rtcm_is_alive
+bool obu_ccan_is_alive
+bool obu_ethernet_is_alive
+uint16 year
+uint8  mon
+uint8  day
+uint8  hour
+uint8  min
+uint8  sec
+uint8 imu_calib

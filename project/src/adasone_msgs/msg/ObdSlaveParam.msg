@@ -1,0 +1,10 @@
+Header header
+bool door_lock
+bool door_opened
+bool ultrasonic_front
+bool ultrasonic_rear
+bool ultrasonic_front_alarm
+bool ultrasonic_rear_alarm
+bool mcan_is_alive
+bool bcan_is_alive
+float32 azimuth_dir

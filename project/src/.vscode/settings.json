@@ -1,0 +1,30 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "*.ipp": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "hash_map": "cpp",
+        "hash_set": "cpp",
+        "initializer_list": "cpp",
+        "valarray": "cpp",
+        "string_view": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp"
+    },
+    "python.autoComplete.extraPaths": [
+        "/home/yun/1234/devel/lib/python2.7/dist-packages",
+        "/home/yun/asdf/devel/lib/python2.7/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/yun/1234/devel/lib/python2.7/dist-packages",
+        "/home/yun/asdf/devel/lib/python2.7/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ]
+}
