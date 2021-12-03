@@ -26,6 +26,8 @@ GPS가 FLOATING 상태에서 간략한 Dead Reckoning을 통한 위치 추정
 + 경로 생성  
 최단 경로 탐색 알고리즘(다익스트라)을 통한 경로 생성 
 
+![경로](https://user-images.githubusercontent.com/71866756/144534714-c0761ab7-ba46-4433-b134-e8f40b461f3a.png)
+
 ### 입/출력 ###
 + User Input  
 GPS on/off 상태 조절, 카메라가 설치된 위치, look ahead distance 등 사용자가 임의로 parameter setting  
