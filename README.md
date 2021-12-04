@@ -44,7 +44,7 @@ HDmap, LaneDetection모듈을 통해 계산한 조향각 및 주행 화면, cros
 + **GPS ON**
 <img src="https://user-images.githubusercontent.com/71866756/144721832-2dcac39c-5458-439d-8467-d5f78d91d9ae.gif" width="100%" height="100%"/><br><br>
 + **GPS OFF**  
-  <img src="https://user-images.githubusercontent.com/71866756/144721832-2dcac39c-5458-439d-8467-d5f78d91d9ae.gif" width="100%" height="100%"/>
+  <img src="https://user-images.githubusercontent.com/71866756/144722015-3888c975-5dbd-49eb-b65b-4231cbfe9fe3.gif" width="100%" height="100%"/>
 
 ## Env
 + ROS melodic
