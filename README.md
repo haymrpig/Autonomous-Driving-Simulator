@@ -7,32 +7,32 @@
 
 ## Core Features
 ### 차선 인식 ### 
-+ Hough Transform  
++ **Hough Transform**  
 ROI로 지정한 영역에 대해 허프 변환 진행
-+ Filtering  
++ **Filtering**  
 탐색한 선분에 대해 차선으로 적합한 기울기 범위 내의 차선 filtering 진행
-+ Fit line  
++ **Fit line**  
 검출한 선분을 연결하여 하나의 직선으로 변환, 차선으로 인식
-+ 차선 업데이트  
++ **차선 업데이트**  
 이전 프레임에서 찾은 차선과 새로 찾은 차선의 유사도를 이용하여 차선 업데이트  
 
 ![차선인식 사진](https://user-images.githubusercontent.com/71866756/144534105-263b7156-3ff3-453a-943b-3106f33f8ba5.png)
 
 ### HDmap을 이용한 경로 탐색 ###
-+ Localization  
++ **Localization**  
 GPS가 FIXED 상태에서 map과 비교를 통해 현재 위치 추정  
 GPS가 FLOATING 상태에서 간략한 Dead Reckoning을 통한 위치 추정  
 
-+ 경로 생성  
++ **경로 생성**  
 최단 경로 탐색 알고리즘(다익스트라)을 통한 경로 생성 
 
 ![경로](https://user-images.githubusercontent.com/71866756/144534714-c0761ab7-ba46-4433-b134-e8f40b461f3a.png)
 
 ### 입/출력 ###
-+ User Input  
++ **User Input**  
 GPS on/off 상태 조절, 카메라가 설치된 위치, look ahead distance 등 사용자가 임의로 parameter setting  
 
-+ Output  
++ **Output**  
 HDmap, LaneDetection모듈을 통해 계산한 조향각 및 주행 화면, cross track error 등 출력 
 
 ![GUI](https://user-images.githubusercontent.com/71866756/144534337-b8cc936b-04bf-4c19-8443-d0c12ba61040.png)
@@ -41,6 +41,11 @@ HDmap, LaneDetection모듈을 통해 계산한 조향각 및 주행 화면, cros
 ![rqt graph](https://user-images.githubusercontent.com/71866756/144534364-daeb1207-cf0d-42d7-8d18-a2fd45375531.png)
 
 ## Demonstration video ##
++ **GPS ON**
+<img src="https://user-images.githubusercontent.com/71866756/144721832-2dcac39c-5458-439d-8467-d5f78d91d9ae.gif" width="100%" height="100%"/><br><br>
++ **GPS OFF**  
+  <img src="https://user-images.githubusercontent.com/71866756/144721832-2dcac39c-5458-439d-8467-d5f78d91d9ae.gif" width="100%" height="100%"/>
+
 ## Env
 + ROS melodic
 + Ubuntu 18.04
